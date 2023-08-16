@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root to: "friends#index" 
 
-  # devise_for :user
+  devise_for :user
   resources :friends
   get 'home/about'
   get 'user/sign_in'
